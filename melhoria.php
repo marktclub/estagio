@@ -19,9 +19,9 @@
 			$usuario = $BD->buscar("SELECT * FROM usuario WHERE login = '$login' AND senha = '{$senha}'");
 			if($usuario):
 				$_SESSION['USUARIO'] = $usuario;
-				header('LOCATION: http://localhost/tester/index.php');
+				header('LOCATION: http://localhost/estagio/index.php');
 			else:
-				header('LOCATION: http://localhost/tester/erro_ao_logar.php');
+				header('LOCATION: http://localhost/estagio/erro_ao_logar.php');
 			endif;
 		}
 	}

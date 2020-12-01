@@ -13,7 +13,7 @@
 			$login = $_POST['login'];
 			$senha = $_POST['senha'];
 
-			// Considere que esse arquivo existe e tem tada a conexao com o banco de dados
+			// Considere que esse arquivo existe e tem toda a conexao com o banco de dados
 			include('Conexao.php');
 
 			$usuario = $BD->buscar("SELECT * FROM usuario WHERE login = '$login' AND senha = '{$senha}'");
